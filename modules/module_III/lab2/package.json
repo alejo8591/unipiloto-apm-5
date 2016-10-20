@@ -1,0 +1,11 @@
+{
+  "name": "lab2",
+  "version": "0.1.0",
+  "description": "ab2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Romero",
+  "license": "MIT"
+}
