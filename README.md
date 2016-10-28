@@ -8,7 +8,6 @@ En esta carpeta del repositorio se almacenan ejemplos aplicados de conceptos o t
 #### Modules
 En esta carpeta del repositorio ejercicios tratados en clase o durante las sesiones de clase.
 
-
 ### ¡Para Tener en Cuenta!
 
 El espacio de comunicación y dudas esta abierto y sera como en consenso se decidió con el grupo; en GitHub en el repositorio oficial del Diplomado, a través de la herramienta de gestión de incidencias `issues`.
@@ -30,6 +29,9 @@ El espacio de comunicación y dudas esta abierto y sera como en consenso se deci
 ### Colaboradores
 
 Personas que han contribuido y colaborado con material, intervenciones y ayudas en los diferentes temas tratados en el diplomado:
+* [@gjrivero](https://github.com/gjrivero)
+* [@camuskool](https://github.com/camuskool)
+* [@ingleo](https://github.com/ingleo)
 
 ### Opciones de Licencia para el Código Fuente
 
