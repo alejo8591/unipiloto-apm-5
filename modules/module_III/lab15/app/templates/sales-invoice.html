@@ -1,0 +1,15 @@
+<h1>{{ title }}</h1>
+<ul>
+    <li *ngFor="let item of salesInvoices"
+        (click)="onSelect(item)">
+        <span>{{item.customer.id}}</span> {{item.customer.name}}
+    </li>
+</ul>
+
+<hr />
+<div *ngIf="selectedSalesInvoice">
+    <h2>
+        {{selectedSalesInvoice.customer.name | uppercase}} Sales invoices
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>

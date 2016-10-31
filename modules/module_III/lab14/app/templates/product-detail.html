@@ -1,0 +1,23 @@
+<h1>{{ title }}</h1>
+<ul>
+    <li *ngFor="let product of products"
+        [class.pepito]="product === selected"
+        (click)="onSelect(product)">
+        <span>{{product.id}}</span> {{product.name}}
+    </li>
+</ul>
+
+<div *ngIf="product">
+    <hr />
+    <label>Name: </label><br />
+    <input [(ngModel)]="product.name" placeholder="name"><br />
+    <label>Description: </label><br />
+    <textarea [(ngModel)]="product.description" placeholder="description"></textarea><br />
+    <label>Type: </label><br />
+    <input [(ngModel)]="product.type" placeholder="tipo"><br />
+    <label>Price: </label><br />
+    <input [(ngModel)]="product.price" placeholder="precio"><br />
+    <label>Quantity: </label><br />
+    <input [(ngModel)]="product.quantity" placeholder="cantidad"><br />
+    <button (click)="save()">Save</button>
+</div>

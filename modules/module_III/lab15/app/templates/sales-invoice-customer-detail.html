@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+<ul>
+    <li *ngFor="let item of salesInvoices"
+        (click)="onSelect(item)">
+        <strong>Sales invoice ID: {{ item.id }}</strong>
+        <ul>
+            <li>Customer: <span>{{item.customer.id}}</span> {{item.customer.name}}</li>
+            <li>Amount: <span>{{item.invoiceAmount}}</span></li>
+            <ul>
+                <li *ngFor="let lineItem of item.lineItems">
+                    {{lineItem.productId}}
+                </li>
+            </ul>
+        </ul>
+
+    </li>
+</ul>
