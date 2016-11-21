@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="userForm" (ngSubmit)="saveUser()">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        <ion-label stacked>Nombres:</ion-label>
+        <ion-input formControlName="name" type="text" placeholder="Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        <ion-label stacked>Apellidos:</ion-label>
+        <ion-input formControlName="lastName" type="text" placeholder="Apellidos"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail" item-left></ion-icon>
+        <ion-label stacked>Correo electronico:</ion-label>
+        <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="eye" item-left></ion-icon>
+        <ion-label stacked>Contraseña:</ion-label>
+        <ion-input formControlName="password" type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <ion-row radio-group formControlName="gender">
+        <ion-item>
+          <ion-icon name="woman" item-left></ion-icon>
+          <ion-label>Mujer</ion-label>
+          <ion-radio value="2"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="man" item-left></ion-icon>
+          <ion-label>Hombre</ion-label>
+          <ion-radio value="1"></ion-radio>
+        </ion-item>
+      </ion-row>
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!userForm.valid">Guardar</button>
+    </div>
+  </form>
+</ion-content>

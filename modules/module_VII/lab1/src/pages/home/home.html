@@ -7,8 +7,32 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+<div *ngIf="selected">
+	 <h1>{{ product.name }}</h1>
+	  <h3>id: {{product.id}}</h3>
+	  <h3>type: {{product.type}}</h3>
+	  <h3>quantity: {{product.quantity}}</h3>
+	  <h3>price: {{product.price}}</h3>
+</div>
+
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    <button ion-button color="light" (click)="loadList()">Load List</button>
+  </p>
+
+  <p>
+    <button ion-button (click)="loadInfo()">Default</button>
+  </p>
+
+  <p>
+    <button ion-button color="secondary">Secondary</button>
+  </p>
+
+  <p>
+    <button ion-button color="danger" block round>Danger</button>
+  </p>
+
+  <p>
+    <button ion-button color="dark">Dark</button>
   </p>
 </ion-content>

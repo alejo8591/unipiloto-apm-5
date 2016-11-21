@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Alert</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <button ion-button (click)="presentAlert()" color="danger" block>Alert Modal</button>
+  <button ion-button (click)="presentConfirm()" color="light" block>Confirm Modal</button>
+  <button ion-button (click)="presentPrompt()" color="dark" block>Prompt Modal</button>
+</ion-content>

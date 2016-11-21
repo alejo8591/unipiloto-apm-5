@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Loading</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <button ion-button (click)="presentLoadingDefault()" color="secondary" block>Loading básico</button>
+  <button ion-button (click)="presentLoadingCustom()" color="danger" block>Loading Custom</button>
+  <button ion-button (click)="presentLoadingText()" color="light" block>Loading text</button>
+</ion-content>
