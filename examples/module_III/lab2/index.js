@@ -4,7 +4,6 @@ var my_object = new Object();
 
 var other_object = {};
 
-
 my_object = {
 	firstName: 'Alejandro',
 	lastName: 'Romero',
